@@ -6,7 +6,7 @@ const locationSlice = createSlice({
     locationDetails: [
       {
         pincode: 400001,
-        area: "Bazargate",
+        area: "Lonavala",
         lat: 18.9486,
         lng: 72.83662,
         district: "Mumbai",

@@ -1,16 +1,28 @@
-import React, { Suspense, lazy } from "react";
+import React from "react";
 import { Outlet, createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
 import Header from "./components/Header";
 import store from "./Utils/store";
 import Home from "./components/Home";
-import Contact from "./components/Contact";
 import Search from "./components/Search";
 import SignIn from "./components/SignIn";
 import Cart from "./components/Cart";
 import RestaurantMenu from "./components/RestaurantMenu";
 import MenuSearch from "./components/MenuSearch";
-const Help = lazy(() => import("./components/Help"));
+
+// Custom Error Component
+const ErrorPage = () => {
+  return (
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>Hii,Please send your Queries to</h1>
+      <p>psaxena9059@gmail.com or Call on 9898989898</p>
+      <a href="/" style={{ color: "blue", textDecoration: "underline" }}>
+        Go to Home
+      </a>
+    </div>
+  );
+};
+
 const AppLayout = () => {
   return (
     <Provider store={store}>
@@ -24,28 +36,16 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
+    errorElement: <ErrorPage />, // Error boundary for the main route
     children: [
       {
         path: "/",
         element: <Home />,
       },
       {
-        path: "contact", // Use relative path for nested routes
-        element: <Contact />,
-      },
-      {
         path: "search",
         element: <Search />,
       },
-      {
-        path: "help",
-        element: (
-          <Suspense>
-            <Help />
-          </Suspense>
-        ),
-      },
-
       {
         path: "profile",
         element: <SignIn />,

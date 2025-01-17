@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import logo from "../assets/logo.jpeg";
 import LocationSearch from "./LocationSearch";
 import { useDispatch, useSelector } from "react-redux";
 import { locSearch } from "../Utils/locationSearchVisibilitySlice";
@@ -70,14 +69,11 @@ const Header = () => {
         }}
       >
         <div className="max-w-[25%] flex items-center gap-2">
-          <Link to="/">
-            <img
-              onClick={() => handleNavClick("/")}
-              className="w-36 h-auto pl-4"
-              src={logo}
-              alt="CHEF-2-DOOR logo"
-            />
-          </Link>
+        <div className="text-black font-bold text-3xl tracking-wide">
+          <span className="hover:text-[#f75500] transition duration-300 mx-8">
+            MealRush  
+          </span>
+        </div>
           <div
             className="cursor-pointer flex justify-center items-center gap-2 truncate self-center text-[#3d4152]"
             onClick={() => handleLocationClick()}

@@ -1,10 +1,10 @@
 import React from "react";
-import chef2doorlandingpage from "../assets/chef2doorlandingpage.png";
+import landingpage from "../assets/landingpage.png";
 const SignIn = () => {
   return (
     <div className="flex flex-col items-center justify-start min-h-screen mt-40 ">
       <img
-        src={chef2doorlandingpage}
+        src={landingpage}
         alt=""
         className="w-auto mt-2 h-[40vh] mb-3"
       />

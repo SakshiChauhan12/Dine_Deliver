@@ -16,21 +16,6 @@ const RestaurantMenuShimmering = () => {
             <div className="animate-pulse h-[200px] w-full bg-gray-200 rounded-lg"></div>
           </div>
         </div>
-        {/* Placeholder UI for offers */}
-        <div className="animate-pulse">
-          <hr className="my-8"></hr>
-          <div className="flex justify-between items-center px-4">
-            <h2 className="font-bold text-2xl leading-3 tracking-tight">
-              Deals For You
-            </h2>
-            <div className="animate-pulse w-[200px] h-[50px] bg-gray-200 rounded-lg"></div>
-          </div>
-          <div className="container-snap p-4 gap-x-8 flex mt-4 mb-2 overflow-x-auto">
-            <div className="animate-pulse w-[250px] h-[150px] bg-gray-200 rounded-lg"></div>
-            <div className="animate-pulse w-[250px] h-[150px] bg-gray-200 rounded-lg"></div>
-            <div className="animate-pulse w-[250px] h-[150px] bg-gray-200 rounded-lg"></div>
-          </div>
-        </div>
 
         {/* Placeholder UI for menu */}
         <div className="animate-pulse">

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import footer_logo from "../assets/logo.jpeg";
 import { footer_content } from "../helpers/Constant";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaRegCopyright } from "react-icons/fa";
@@ -17,8 +16,6 @@ const Footer = ({ footerCities }) => {
   const handleCities = () => {
     setCityOpen(!cityOpen);
   };
-
-  // Ensure footerCities is an array
   const cities = Array.isArray(footerCities) ? footerCities : [];
 
   return (
@@ -29,15 +26,14 @@ const Footer = ({ footerCities }) => {
             <div className="flex items-center" key="footer-details">
               <img
                 className="w-40 filter grayscale"
-                src={footer_logo}
-                alt="Footer Logo"
+                src="https://logowik.com/content/uploads/images/free-food-delivery8485.logowik.com.webp"
                 style={{
                   backgroundColor: "[#110705]",
                   filter: "brightness(1) invert(1) hue-rotate(360deg)",
                 }}
               />
             </div>
-            <h1 className="truncate">© 2024 Bundl Technologies Pvt. Ltd</h1>
+            <h1 className="truncate">© 2024 MealRush</h1>
           </div>
           {footer_content.map((x, index) => (
             <div key={index} className={`${index === 2 ? "col-start-3 " : ""}`}>
@@ -97,7 +93,7 @@ const Footer = ({ footerCities }) => {
       </div>
       <div className="flex flex-col w-full items-center justify-center bg-[#110705] text-white ">
         <p className="py-2">
-          Made with 💓 by Divu, Let's connect beyond the Plate
+         Let's connect beyond the Plate
         </p>
         <div className="flex justify-between items-center gap-8 py-4">
           <a>
@@ -118,7 +114,7 @@ const Footer = ({ footerCities }) => {
         </div>
         <div className="flex justify-center items-center py-2 mb-12 gap-2">
           <FaRegCopyright />
-          <p>2023 CHEF-2-DOOR</p>
+          <p>2024 MealRush</p>
         </div>
       </div>
     </>

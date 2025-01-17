@@ -7,10 +7,7 @@ import {
   DELIVERY_DISTANCE_IMG,
   MENU_OFFERS_CDN_URL,
 } from "../helpers/Constant";
-import OfferSlider from "./OfferSlider";
-import OfferCard from "./OfferCard";
 import MenuCategory from "./MenuCategory";
-// import MenuSearch from "./MenuSearch";
 import { useSelector } from "react-redux";
 import MyContext from "../Utils/MyContext";
 import ResetCart from "./ResetCart";
@@ -126,40 +123,7 @@ const RestaurantMenu = () => {
               </div>
             </div>
           </div>
-          {resOffers && (
-            <>
-              <hr className="my-8"></hr>
-              <div className="flex justify-between items-center px-4">
-                <h2 className="font-bold text-2xl leading-3 tracking-tight">
-                  Deals For You
-                </h2>
-                <OfferSlider
-                  className="offerSlider"
-                  key="offerSlider"
-                  amount={450}
-                />
-              </div>
-              <div className="offerSlider container-snap p-4 gap-x-8 flex mt-4 mb-2 overflow-x-auto">
-                {resOffers.map((offer, index) => (
-                  <OfferCard
-                    key={index} // It's better to use a unique key for each item in the array
-                    offerLogo={offer.offerLogo}
-                    header={offer.header}
-                    couponCode={offer.couponCode}
-                  />
-                ))}
-              </div>
-            </>
-          )}
           <p className="py-4 text-center leading-loose">M E N U</p>
-          {/* <div>
-          <Link to={`/menusearch/${id}`}>
-            <div className="flex items-center justify-center bg-[#f0f0f5] text-[#616469] py-2 rounded-xl px-4 relative">
-              <h3 className="text-lg font-bold">Search for dishes</h3>
-              <FontAwesomeIcon icon={faSearch} className="absolute right-4" />
-            </div>
-          </Link>
-        </div> */}
           <div>
             {resMenu && (
               <>
