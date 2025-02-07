@@ -15,7 +15,7 @@ const ErrorPage = () => {
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h1>Hii,Please send your Queries to</h1>
-      <p>psaxena9059@gmail.com or Call on 9898989898</p>
+      <p>sakshi4685chauhan@gmail.com or Call on 8791695077</p>
       <a href="/" style={{ color: "blue", textDecoration: "underline" }}>
         Go to Home
       </a>

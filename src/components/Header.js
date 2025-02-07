@@ -71,7 +71,7 @@ const Header = () => {
         <div className="max-w-[25%] flex items-center gap-2">
         <div className="text-black font-bold text-3xl tracking-wide">
           <span className="hover:text-[#f75500] transition duration-300 mx-8">
-            MealRush  
+            DineDeliver 
           </span>
         </div>
           <div

@@ -33,7 +33,7 @@ const Footer = ({ footerCities }) => {
                 }}
               />
             </div>
-            <h1 className="truncate">© 2024 MealRush</h1>
+            <h1 className="truncate">© 2024DineDeliver</h1>
           </div>
           {footer_content.map((x, index) => (
             <div key={index} className={`${index === 2 ? "col-start-3 " : ""}`}>
@@ -114,7 +114,7 @@ const Footer = ({ footerCities }) => {
         </div>
         <div className="flex justify-center items-center py-2 mb-12 gap-2">
           <FaRegCopyright />
-          <p>2024 MealRush</p>
+          <p>2024 DineDeliver</p>
         </div>
       </div>
     </>
